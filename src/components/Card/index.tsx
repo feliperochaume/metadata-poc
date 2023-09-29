@@ -49,7 +49,7 @@ const Card: React.FC<Props> = ({ stage, goal, current, operatorNames }) => {
   if (stage === 'lendario') {
     buttonText = "Já garantiu R$ 128 nesta rodada!";
   } else if (stage === 'mestre') {
-    buttonText = "Já garantiu R$ 69 nesta rodada.";
+    buttonText = "Já garantiu R$ 31 nesta rodada.";
   } else {
     // Se não for lendario nem mestre, não há texto para o botão
     buttonText = "";
