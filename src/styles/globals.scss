@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   font-size: 16px;
-  background-color: #fff;
+  background-color: gray;
   color: #333;
 }
 
@@ -32,4 +32,16 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+
+button {
+  /* Redefina todas as configurações padrão do button */
+  padding: initial;
+  background-color: initial;
+  border: initial;
+  cursor: initial;
+  color: initial;
+  font-size: initial;
+  font-weight: initial;
+  /* Outras propriedades que deseja redefinir */
 }
