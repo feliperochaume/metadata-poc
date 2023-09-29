@@ -32,6 +32,18 @@ const Card: React.FC<Props> = ({ stage, goal, current, operatorNames }) => {
     return titleCaseWords.join(' ');
   }
 
+  let rewardText = "";
+
+  // Define o texto do voucher com base no valor de 'stage'
+  if (stage === 'lendario') {
+    rewardText = "1 voucher IFood de R$30!";
+  } else if (stage === 'mestre') {
+    rewardText = "R$ 69 nesta rodada.";
+  } else if (stage === 'estrela') {
+    rewardText = "R$ 31 nesta rodada.";
+  }
+ 
+
   return (
     <div className={`${styles.card} ${cardStyle}`}>
       <div className={styles.progressContainer}>
@@ -40,7 +52,7 @@ const Card: React.FC<Props> = ({ stage, goal, current, operatorNames }) => {
           style={{ width: `${porcentagemConcluida}%` }}
         ></div>
       </div>
-      <p className={styles.metaText}>{cadastrosConcluidos} de {totalCadastros} cadastros para garantir 1 voucher IFood de R$30!</p>
+      <p className={styles.metaText}>{cadastrosConcluidos} de {totalCadastros} cadastros para garantir {rewardText}</p>
       <section className={styles.operatorSection}>
         {operatorNames.map((operatorName, index) => (
           <div key={index} className={styles.operatorInfo}>
