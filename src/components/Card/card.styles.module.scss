@@ -7,6 +7,9 @@
   flex-direction: column;
   gap: 0.75rem;
 
+  /* Adiciona uma transição suave para a transformação e sombreamento */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   .progressContainer {
     border-radius: 0.5rem;
     background-color: #E0E9E2;
@@ -50,6 +53,14 @@
       }
     }
   }
+}
+
+/* Efeito de escala e sombreamento ao passar o mouse */
+.card:hover {
+  transform: scale(1.05);
+  /* Aumenta o tamanho em 5% */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  /* Adicione o sombreamento desejado aqui */
 }
 
 // Estilos para 'lendario'
