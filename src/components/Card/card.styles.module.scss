@@ -41,7 +41,6 @@
       font-size: 1rem;
       font-style: normal;
       font-weight: 500;
-      // line-height: 1.125rem;
       line-height: inherit;
     }
   }
@@ -56,10 +55,11 @@
   }
 
   .cardBtn {
+    color: #FFF;
     background-color: #FF0099;
     padding: 0.25rem 0.5rem;
     font-size: 0.75rem;
-    max-width: 200px;
+    max-width: fit-content;
   }
 }
 
@@ -72,10 +72,11 @@
   }
 
   .cardBtn {
+    color: #FFF;
     background-color: #0099C9;
     padding: 0.25rem 0.5rem;
     font-size: 0.75rem;
-    max-width: 200px;
+    max-width: fit-content;
   }
 }
 
@@ -88,9 +89,10 @@
   }
 
   .cardBtn {
+    color: #FFF;
     display: none;
     padding: 0.25rem 0.5rem;
     font-size: 0.75rem;
-    max-width: 200px;
+    max-width: fit-content;
   }
 }
