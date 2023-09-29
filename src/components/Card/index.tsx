@@ -42,6 +42,18 @@ const Card: React.FC<Props> = ({ stage, goal, current, operatorNames }) => {
   } else if (stage === 'estrela') {
     rewardText = "R$ 31 nesta rodada.";
   }
+
+  let buttonText = "";
+
+  // Define o texto do botão com base no valor de 'stage'
+  if (stage === 'lendario') {
+    buttonText = "Já garantiu R$ 128 nesta rodada!";
+  } else if (stage === 'mestre') {
+    buttonText = "Já garantiu R$ 69 nesta rodada.";
+  } else {
+    // Se não for lendario nem mestre, não há texto para o botão
+    buttonText = "";
+  }
  
 
   return (
@@ -62,7 +74,7 @@ const Card: React.FC<Props> = ({ stage, goal, current, operatorNames }) => {
         ))}
       </section>
       <button className={styles.cardBtn}>
-        Já garantiu R$ 128 nesta rodada!
+         {buttonText}
       </button>
     </div>
   );

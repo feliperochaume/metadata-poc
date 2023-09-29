@@ -26,17 +26,17 @@ export default function Home() {
   }, []);
 
   // Função para definir a meta com base no estágio
-  function getGoal(stage: string): number {
-    if (stage === 'estrela') {
-      return 6;
-    } else if (stage === 'mestre') {
-      return 12;
-    } else if (stage === 'lendario') {
-      return 32;
-    } else {
-      return 0; // Valor padrão, você pode ajustar conforme necessário
-    }
-  } 
+    function getGoal(stage: string): number {
+      if (stage === 'estrela') {
+        return 6    ;
+      } else if (stage === 'mestre') {
+        return 12;
+      } else if (stage === 'lendario') {
+        return 32;
+      } else {
+        return 0; // Valor padrão, você pode ajustar conforme necessário
+      }
+    } 
 
   return (
     <div className={styles.homeContainer}>
