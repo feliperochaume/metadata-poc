@@ -1,0 +1,35 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Remove a lista de pontos em listas não ordenadas */
+ul {
+  list-style: none;
+}
+
+/* Remove sublinhado padrão de links */
+a {
+  text-decoration: none;
+}
+
+/* Adicione estilos básicos para links */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos de imagem responsivos */
+img {
+  max-width: 100%;
+  height: auto;
+}
