@@ -35,13 +35,19 @@
 
   .operatorSection {
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
 
-    h3 {
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 500;
-      line-height: inherit;
+    .operatorInfo {
+      display: flex;
+      gap: 0.5rem;
+
+      h3 {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: inherit;
+      }
     }
   }
 }
